@@ -1,5 +1,6 @@
 // About.js
 import React, { useState } from 'react';
+import Tabla from './Tabla';
 
 function About() {
   const [msj,setMsj]=useState("");
@@ -32,6 +33,7 @@ function About() {
         <input type='text' id='nombre' value={nombre} onChange={e=>setNombre(e.target.value)} required></input>
         <button type='submit'>Enviar</button>
       </form>
+      <Tabla datos={elementos}/>
       <table className='table table-bordered'>
 
         <thead>
